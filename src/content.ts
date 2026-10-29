@@ -18,6 +18,7 @@ const fr: Content = {
       { label: "Expérience", href: "#experience" },
       { label: "Compétences", href: "#skills" },
       { label: "Projets", href: "#projects" },
+      { label: "Certifications", href: "#certifications" },
       { label: "Contact", href: "#contact" },
     ],
     langLabel: "Changer de langue",
@@ -44,7 +45,7 @@ const fr: Content = {
     items: [
       {
         role: "Spécialiste du suivi de flotte et de la logistique",
-        org: "Oum Darman",
+        org: "OMD Transports & Logistics",
         context: "Opérations de transport Ciment",
         location: "Boumerdès, Algérie",
         period: "Septembre 2025 – Présent",
@@ -56,32 +57,40 @@ const fr: Content = {
         ],
       },
       {
+        role: "Opérateur",
+        org: "Monopipe",
+        location: "Ouled Moussa, Boumerdès",
+        period: "Février – Septembre 2025",
+        bullets: [],
+      },
+      {
         role: "Enseignant en école primaire",
-        org: "Contrat temporaire",
+        org: "Ministère de l'Éducation",
+        context: "Contrat temporaire",
         location: "Khemis El Khechna, Algérie",
-        period: "Janvier – Mai 2024",
+        period: "Janvier – Juillet 2024",
         bullets: [
-          "Préparation et animation de cours dans les matières fondamentales.",
-          "Suivi des progrès des élèves et gestion de la classe.",
+          "Planification et enseignement des matières clés à plus de 30 élèves, avec une adaptation constante aux besoins pédagogiques individuels.",
+          "Création d'activités interactives ayant amélioré la participation en classe de 40 %.",
           "Développement des compétences en communication, organisation et gestion des priorités.",
         ],
       },
       {
-        role: "Stagiaire",
+        role: "Analyste de la fraude commerciale",
         org: "Ministère du Commerce et de la Promotion des Exportations",
-        location: "Alger, Algérie",
-        period: "Janvier – Juin 2023",
+        location: "Boumerdès, Algérie",
+        period: "Septembre 2022 – Juillet 2023",
         bullets: [
-          "Analyse des pratiques commerciales frauduleuses et des stratégies de prévention.",
-          "Participation aux contrôles de conformité et à la collecte de données.",
+          "Participation active à des enquêtes de fraude commerciale.",
+          "Analyse de plus de 200 dossiers, contribuant à une meilleure surveillance du marché local.",
           "Observation des mécanismes de contrôle et d'application de la réglementation commerciale.",
         ],
       },
       {
-        role: "Stagiaire",
+        role: "Spécialiste du département logistique",
         org: "SARL BPI-ENH DOUDAH (Import/Export)",
         location: "Alger, Algérie",
-        period: "Janvier – Mai 2021",
+        period: "Septembre 2021 – Mai 2022",
         bullets: [
           "Préparation et vérification des documents d'import-export.",
           "Assistance aux opérations logistiques et aux procédures douanières.",
@@ -101,6 +110,7 @@ const fr: Content = {
           "Suivi de flotte et données télématiques",
           "Analyse de la consommation de carburant",
           "Contrôle des données opérationnelles",
+          "Analyse de la fraude commerciale",
           "Documentation import-export et procédures douanières",
         ],
       },
@@ -108,6 +118,7 @@ const fr: Content = {
         name: "Données et automatisation",
         items: [
           "Excel et Google Sheets",
+          "Looker",
           "Nettoyage et structuration de données",
           "Tableaux de bord et reporting opérationnel",
           "Automatisation de processus métier",
@@ -144,7 +155,7 @@ const fr: Content = {
           "Chart.js",
           "Wialon",
         ],
-        image: "/projects/prism.svg",
+        image: "/projects/prism.png",
         imageAlt: "Aperçu de la plateforme Prism",
       },
       {
@@ -172,12 +183,12 @@ const fr: Content = {
     items: [
       {
         degree: "Master en Finance et Commerce International",
-        school: "Université de Boumerdès",
+        school: "Université M'Hamed Bougara de Boumerdès",
         period: "Septembre 2021 – Mai 2023",
       },
       {
         degree: "Licence en Commerce International et Logistique",
-        school: "Université de Boumerdès",
+        school: "Université M'Hamed Bougara de Boumerdès",
         period: "Septembre 2018 – Juin 2021",
       },
       {
@@ -203,6 +214,24 @@ const fr: Content = {
     linkedin,
     location: "Boumerdès, Algérie",
   },
+  certifications: {
+    title: "Certifications",
+    verifyLabel: "Vérifier",
+    items: [
+      {
+        name: "Claude Code 101",
+        authority: "Claude Academy — Anthropic",
+        period: "Août 2026",
+        url: "https://academy.claude.com/verify/ef5cb20ea02e51111ac6e22d41bce765",
+      },
+      {
+        name: "Introduction to Claude Cowork",
+        authority: "Claude Academy — Anthropic",
+        period: "Août 2026",
+        url: "https://academy.claude.com/verify/70cf0570e127f8e9e11526240839b215",
+      },
+    ],
+  },
   footer: {
     rights: "Tous droits réservés.",
   },
@@ -223,6 +252,7 @@ const en: Content = {
       { label: "Experience", href: "#experience" },
       { label: "Skills", href: "#skills" },
       { label: "Projects", href: "#projects" },
+      { label: "Certifications", href: "#certifications" },
       { label: "Contact", href: "#contact" },
     ],
     langLabel: "Switch language",
@@ -249,7 +279,7 @@ const en: Content = {
     items: [
       {
         role: "Fleet & Logistics Monitoring Specialist",
-        org: "Oum Darman",
+        org: "OMD Transports & Logistics",
         context: "Cement transport operations",
         location: "Boumerdès, Algeria",
         period: "September 2025 – Present",
@@ -261,32 +291,40 @@ const en: Content = {
         ],
       },
       {
+        role: "Operator",
+        org: "Monopipe",
+        location: "Ouled Moussa, Algeria",
+        period: "February – September 2025",
+        bullets: [],
+      },
+      {
         role: "Primary School Teacher",
-        org: "Temporary contract",
+        org: "Ministry of Education",
+        context: "Temporary contract",
         location: "Khemis El Khechna, Algeria",
-        period: "January – May 2024",
+        period: "January – July 2024",
         bullets: [
-          "Prepared and taught core subjects.",
-          "Tracked student progress and managed the classroom.",
+          "Planned and taught core subjects to 30+ students, adapting continuously to individual learning needs.",
+          "Created interactive activities that improved classroom participation by 40%.",
           "Developed communication, organisation and prioritisation skills.",
         ],
       },
       {
-        role: "Intern",
+        role: "Commercial Fraud Analyst",
         org: "Ministry of Trade and Export Promotion",
-        location: "Algiers, Algeria",
-        period: "January – June 2023",
+        location: "Boumerdès, Algeria",
+        period: "September 2022 – July 2023",
         bullets: [
-          "Analysed fraudulent commercial practices and prevention strategies.",
-          "Contributed to compliance checks and data collection.",
+          "Contributed actively to commercial fraud investigations.",
+          "Analysed 200+ case files, supporting better monitoring of the local market.",
           "Observed regulatory control and enforcement mechanisms.",
         ],
       },
       {
-        role: "Intern",
+        role: "Logistics Department Specialist",
         org: "SARL BPI-ENH DOUDAH (Import/Export)",
         location: "Algiers, Algeria",
-        period: "January – May 2021",
+        period: "September 2021 – May 2022",
         bullets: [
           "Prepared and verified import-export documents.",
           "Assisted with logistics operations and customs procedures.",
@@ -306,6 +344,7 @@ const en: Content = {
           "Fleet monitoring and telematics data",
           "Fuel consumption analysis",
           "Operational data control",
+          "Commercial fraud analysis",
           "Import-export documentation and customs procedures",
         ],
       },
@@ -313,6 +352,7 @@ const en: Content = {
         name: "Data & automation",
         items: [
           "Excel and Google Sheets",
+          "Looker",
           "Data cleaning and structuring",
           "Dashboards and operational reporting",
           "Business process automation",
@@ -348,7 +388,7 @@ const en: Content = {
           "Chart.js",
           "Wialon",
         ],
-        image: "/projects/prism.svg",
+        image: "/projects/prism.png",
         imageAlt: "Prism platform preview",
       },
       {
@@ -376,12 +416,12 @@ const en: Content = {
     items: [
       {
         degree: "Master's in Finance and International Trade",
-        school: "University of Boumerdès",
+        school: "M'Hamed Bougara University of Boumerdès",
         period: "September 2021 – May 2023",
       },
       {
         degree: "Bachelor's in International Trade and Logistics",
-        school: "University of Boumerdès",
+        school: "M'Hamed Bougara University of Boumerdès",
         period: "September 2018 – June 2021",
       },
       {
@@ -406,6 +446,24 @@ const en: Content = {
     email,
     linkedin,
     location: "Boumerdès, Algeria",
+  },
+  certifications: {
+    title: "Certifications",
+    verifyLabel: "Verify",
+    items: [
+      {
+        name: "Claude Code 101",
+        authority: "Claude Academy — Anthropic",
+        period: "August 2026",
+        url: "https://academy.claude.com/verify/ef5cb20ea02e51111ac6e22d41bce765",
+      },
+      {
+        name: "Introduction to Claude Cowork",
+        authority: "Claude Academy — Anthropic",
+        period: "August 2026",
+        url: "https://academy.claude.com/verify/70cf0570e127f8e9e11526240839b215",
+      },
+    ],
   },
   footer: {
     rights: "All rights reserved.",
