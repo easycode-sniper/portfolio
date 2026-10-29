@@ -18,7 +18,6 @@ const fr: Content = {
       { label: "Expérience", href: "#experience" },
       { label: "Compétences", href: "#skills" },
       { label: "Projets", href: "#projects" },
-      { label: "Certifications", href: "#certifications" },
       { label: "Contact", href: "#contact" },
     ],
     langLabel: "Changer de langue",
@@ -214,24 +213,6 @@ const fr: Content = {
     linkedin,
     location: "Boumerdès, Algérie",
   },
-  certifications: {
-    title: "Certifications",
-    verifyLabel: "Vérifier",
-    items: [
-      {
-        name: "Claude Code 101",
-        authority: "Claude Academy — Anthropic",
-        period: "Août 2026",
-        url: "https://academy.claude.com/verify/ef5cb20ea02e51111ac6e22d41bce765",
-      },
-      {
-        name: "Introduction to Claude Cowork",
-        authority: "Claude Academy — Anthropic",
-        period: "Août 2026",
-        url: "https://academy.claude.com/verify/70cf0570e127f8e9e11526240839b215",
-      },
-    ],
-  },
   footer: {
     rights: "Tous droits réservés.",
   },
@@ -252,7 +233,6 @@ const en: Content = {
       { label: "Experience", href: "#experience" },
       { label: "Skills", href: "#skills" },
       { label: "Projects", href: "#projects" },
-      { label: "Certifications", href: "#certifications" },
       { label: "Contact", href: "#contact" },
     ],
     langLabel: "Switch language",
@@ -446,24 +426,6 @@ const en: Content = {
     email,
     linkedin,
     location: "Boumerdès, Algeria",
-  },
-  certifications: {
-    title: "Certifications",
-    verifyLabel: "Verify",
-    items: [
-      {
-        name: "Claude Code 101",
-        authority: "Claude Academy — Anthropic",
-        period: "August 2026",
-        url: "https://academy.claude.com/verify/ef5cb20ea02e51111ac6e22d41bce765",
-      },
-      {
-        name: "Introduction to Claude Cowork",
-        authority: "Claude Academy — Anthropic",
-        period: "August 2026",
-        url: "https://academy.claude.com/verify/70cf0570e127f8e9e11526240839b215",
-      },
-    ],
   },
   footer: {
     rights: "All rights reserved.",

@@ -38,13 +38,6 @@ export type LanguageItem = {
   level: string;
 };
 
-export type CertItem = {
-  name: string;
-  authority: string;
-  period: string;
-  url: string;
-};
-
 export type Content = {
   meta: { title: string; description: string };
   a11y: { skipToContent: string };
@@ -78,11 +71,6 @@ export type Content = {
     email: string;
     linkedin: string;
     location: string;
-  };
-  certifications: {
-    title: string;
-    verifyLabel: string;
-    items: CertItem[];
   };
   footer: { rights: string };
 };
