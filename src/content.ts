@@ -12,25 +12,18 @@ const fr: Content = {
   a11y: {
     skipToContent: "Aller au contenu",
   },
+  header: {
+    name: "Souhaib",
+    role: "Suivi de flotte & carburant",
+  },
   nav: {
-    items: [
-      { label: "À propos", href: "#about" },
-      { label: "Expérience", href: "#experience" },
-      { label: "Compétences", href: "#skills" },
-      { label: "Projets", href: "#projects" },
-      { label: "Contact", href: "#contact" },
-    ],
     langLabel: "Changer de langue",
     themeLabel: "Changer de thème",
   },
-  hero: {
-    name: "Souhaib Ferdjallah",
-    role: "Spécialiste du suivi de flotte et de la logistique",
-    headline: "Je transforme les données de flotte en décisions opérationnelles.",
-    sub: "Analyse de données, contrôle des opérations de transport et développement d'outils métier — dont Prism, une plateforme de suivi et d'intelligence de flotte.",
-    ctaPrimary: "Voir sur LinkedIn",
-    ctaSecondary: "Me contacter",
-    location: "Boumerdès, Algérie",
+  panels: {
+    aboutBtn: "À propos",
+    contactBtn: "Contact",
+    close: "Fermer",
   },
   about: {
     title: "À propos",
@@ -139,12 +132,22 @@ const fr: Content = {
     title: "Projets",
     intro:
       "Des outils construits pour résoudre des problèmes rencontrés sur le terrain.",
+    nextLabel: "Projet suivant",
+    backLabel: "Retour à l'index",
+    techLabel: "Techniquement",
     items: [
       {
         name: "Prism",
+        slug: "prism",
         tag: "Projet phare",
+        accent: "#1e3a8a",
+        context: "[Suivi de flotte, consommation et anomalies]",
         description:
           "Plateforme de suivi et d'intelligence de flotte conçue pour remplacer l'application télématique existante : suivi GPS, vérification des itinéraires, surveillance opérationnelle et détection des anomalies de consommation et des suspicions de vol de carburant.",
+        story: [
+          "Prism est né d'un problème récurrent : le carburant déclaré ne correspondait pas aux tournées réelles. Les relevés arrivaient dans des fichiers séparés, les écarts ne se voyaient que des semaines plus tard, trop tard pour poser la bonne question.",
+          "La plateforme réunit aujourd'hui le suivi live sur des couches cartographiques PostGIS, la vérification des itinéraires, les tableaux de bord de consommation et la détection d'anomalies qui traite une chute soudaine de carburant comme une question, pas comme un accident. Elle remplace l'outil télématique précédent, géré de bout en bout en interne.",
+        ],
         tech: [
           "Next.js",
           "TypeScript",
@@ -159,18 +162,32 @@ const fr: Content = {
       },
       {
         name: "Naftal Fleet",
+        slug: "naftal-fleet",
         tag: "Outil métier",
+        accent: "#9a3412",
+        context: "[Cartes carburant et échéances]",
         description:
           "Outil de gestion et de suivi des cartes carburant : structuration des données des cartes, des véhicules et des échéances, avec suivi des dates d'expiration et des renouvellements.",
+        story: [
+          "Les cartes carburant génèrent des plafonds, des dates limites et des renouvellements faciles à perdre entre plusieurs fichiers. Une échéance oubliée peut bloquer un véhicule tout un mois.",
+          "L'outil structure cartes, véhicules et échéances en un seul endroit : dates d'expiration visibles d'un coup d'œil, rappels simples et historique propre. Moins de papier, moins de trous.",
+        ],
         tech: ["Python", "HTML / JS", "Gestion de données"],
         image: "/projects/naftal-fleet.svg",
         imageAlt: "Aperçu de l'outil Naftal Fleet",
       },
       {
         name: "Tafweej",
+        slug: "tafweej",
         tag: "Application",
+        accent: "#166534",
+        context: "[Paiements, dépenses et commissions]",
         description:
           "Application de gestion de centre éducatif : élèves, paiements, dépenses et commissions des enseignants, avec une interface multilingue arabe et un affichage RTL.",
+        story: [
+          "Gérer un centre éducatif, c'est suivre les élèves, les paiements, les dépenses et les commissions des enseignants sans se noyer dans les cahiers.",
+          "Tafweej rassemble tout : suivi des paiements et des commissions, calculs automatiques, interface multilingue arabe avec support RTL, pensée pour un usage quotidien.",
+        ],
         tech: ["Next.js", "TypeScript", "Supabase", "Prisma", "Tailwind CSS"],
         image: "/projects/tafweej.svg",
         imageAlt: "Aperçu de l'application Tafweej",
@@ -215,6 +232,8 @@ const fr: Content = {
   },
   footer: {
     rights: "Tous droits réservés.",
+    themeLight: "Clair",
+    themeDark: "Sombre",
   },
 };
 
@@ -227,25 +246,18 @@ const en: Content = {
   a11y: {
     skipToContent: "Skip to content",
   },
+  header: {
+    name: "Souhaib",
+    role: "Fleet & fuel monitoring",
+  },
   nav: {
-    items: [
-      { label: "About", href: "#about" },
-      { label: "Experience", href: "#experience" },
-      { label: "Skills", href: "#skills" },
-      { label: "Projects", href: "#projects" },
-      { label: "Contact", href: "#contact" },
-    ],
     langLabel: "Switch language",
     themeLabel: "Switch theme",
   },
-  hero: {
-    name: "Souhaib Ferdjallah",
-    role: "Fleet & Logistics Monitoring Specialist",
-    headline: "I turn fleet data into operational decisions.",
-    sub: "Data analysis, transport operations control and custom business tooling — including Prism, a fleet monitoring and intelligence platform.",
-    ctaPrimary: "View on LinkedIn",
-    ctaSecondary: "Contact me",
-    location: "Boumerdès, Algeria",
+  panels: {
+    aboutBtn: "About",
+    contactBtn: "Contact",
+    close: "Close",
   },
   about: {
     title: "About",
@@ -353,12 +365,22 @@ const en: Content = {
   projects: {
     title: "Projects",
     intro: "Tools built to solve problems I ran into in the field.",
+    nextLabel: "Next project",
+    backLabel: "Back to index",
+    techLabel: "Stack",
     items: [
       {
         name: "Prism",
+        slug: "prism",
         tag: "Flagship project",
+        accent: "#1e3a8a",
+        context: "[Fleet tracking, consumption and anomalies]",
         description:
           "Fleet monitoring and intelligence platform designed to replace the existing telematics application: GPS tracking, route verification, operational monitoring and detection of consumption anomalies and suspected fuel theft.",
+        story: [
+          "Prism started from a recurring problem: the fuel declared never matched the routes actually driven. Readings arrived in separate files, variances surfaced weeks later, far too late to ask the right question.",
+          "The platform now brings together live tracking on PostGIS map layers, route verification, consumption dashboards and anomaly detection that treats a sudden fuel drop as a question, not an accident. It replaces the previous telematics tool, managed end to end internally.",
+        ],
         tech: [
           "Next.js",
           "TypeScript",
@@ -373,18 +395,32 @@ const en: Content = {
       },
       {
         name: "Naftal Fleet",
+        slug: "naftal-fleet",
         tag: "Business tool",
+        accent: "#9a3412",
+        context: "[Fuel cards and deadlines]",
         description:
           "Fuel card management and tracking tool: structured card, vehicle and deadline data, with visibility on expiry dates and renewals.",
+        story: [
+          "Fuel cards generate limits, deadlines and renewals that are easy to lose between files. One missed renewal can ground a vehicle for a month.",
+          "The tool structures cards, vehicles and deadlines in one place: expiry dates visible at a glance, simple reminders, clean history. Less paper, fewer gaps.",
+        ],
         tech: ["Python", "HTML / JS", "Data management"],
         image: "/projects/naftal-fleet.svg",
         imageAlt: "Naftal Fleet tool preview",
       },
       {
         name: "Tafweej",
+        slug: "tafweej",
         tag: "Application",
+        accent: "#166534",
+        context: "[Payments, expenses and commissions]",
         description:
           "Educational centre management application: students, payments, expenses and teacher commissions, with a multilingual Arabic interface and RTL support.",
+        story: [
+          "Running an educational centre means tracking students, payments, expenses and teacher commissions without drowning in notebooks.",
+          "Tafweej brings it all together: payment and commission tracking, automatic calculations, a multilingual Arabic interface with RTL support, built for daily use.",
+        ],
         tech: ["Next.js", "TypeScript", "Supabase", "Prisma", "Tailwind CSS"],
         image: "/projects/tafweej.svg",
         imageAlt: "Tafweej application preview",
@@ -429,6 +465,8 @@ const en: Content = {
   },
   footer: {
     rights: "All rights reserved.",
+    themeLight: "Light",
+    themeDark: "Dark",
   },
 };
 

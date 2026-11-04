@@ -1,26 +1,35 @@
 "use client";
 
+import { useTheme } from "@/context/ThemeContext";
 import { useLang } from "@/context/LangContext";
-import { LinkedInIcon } from "./ui/icons";
 
-export function Footer({ year }: { year: number }) {
+export function Footer({ accent = false }: { accent?: boolean }) {
+  const { theme, toggleTheme } = useTheme();
   const { t } = useLang();
+  const year = new Date().getFullYear();
+  const label = theme === "dark" ? t.footer.themeDark : t.footer.themeLight;
 
   return (
-    <footer className="border-t border-border py-8">
-      <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-between gap-3 px-6 text-sm text-muted sm:flex-row">
-        <p>
-          © {year} {t.hero.name}. {t.footer.rights}
-        </p>        <a
-          href={t.contact.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 transition hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-        >
-          <LinkedInIcon />
-          LinkedIn
-        </a>
-      </div>
+    <footer
+      className={`flex items-center justify-between px-6 py-6 text-sm sm:px-10 sm:py-8 ${
+        accent ? "text-white" : "text-foreground"
+      }`}
+    >
+      <button
+        type="button"
+        onClick={toggleTheme}
+        aria-label={t.nav.themeLabel}
+        className="inline-flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      >
+        <span
+          aria-hidden="true"
+          className={`inline-block h-2.5 w-2.5 rounded-full ${
+            theme === "dark" ? "bg-white" : "bg-foreground"
+          }`}
+        />
+        <span className="font-medium">{label}</span>
+      </button>
+      <span className={accent ? "text-white/80" : "text-muted"}>©{year}</span>
     </footer>
   );
 }

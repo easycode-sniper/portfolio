@@ -1,7 +1,5 @@
 export type Lang = "fr" | "en";
 
-export type NavItem = { label: string; href: string };
-
 export type ExperienceItem = {
   role: string;
   org: string;
@@ -18,8 +16,12 @@ export type SkillGroup = {
 
 export type ProjectItem = {
   name: string;
+  slug: string;
   tag: string;
+  accent: string;
+  context: string;
   description: string;
+  story: string[];
   tech: string[];
   image: string;
   imageAlt: string;
@@ -41,24 +43,27 @@ export type LanguageItem = {
 export type Content = {
   meta: { title: string; description: string };
   a11y: { skipToContent: string };
+  header: { name: string; role: string };
   nav: {
-    items: NavItem[];
     langLabel: string;
     themeLabel: string;
   };
-  hero: {
-    name: string;
-    role: string;
-    headline: string;
-    sub: string;
-    ctaPrimary: string;
-    ctaSecondary: string;
-    location: string;
+  panels: {
+    aboutBtn: string;
+    contactBtn: string;
+    close: string;
   };
   about: { title: string; paragraphs: string[] };
   experience: { title: string; items: ExperienceItem[] };
   skills: { title: string; intro: string; groups: SkillGroup[] };
-  projects: { title: string; intro: string; items: ProjectItem[] };
+  projects: {
+    title: string;
+    intro: string;
+    nextLabel: string;
+    backLabel: string;
+    techLabel: string;
+    items: ProjectItem[];
+  };
   education: {
     title: string;
     items: EducationItem[];
@@ -72,5 +77,5 @@ export type Content = {
     linkedin: string;
     location: string;
   };
-  footer: { rights: string };
+  footer: { rights: string; themeLight: string; themeDark: string };
 };
